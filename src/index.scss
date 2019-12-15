@@ -1,17 +1,23 @@
 @charset "utf-8";
-
 @import '../node_modules/bulma';
-
 @import '~antd/dist/antd.css';
+
+// SET VARIABLES
+$red : #AC2C2E;
+$dark-red: #8f2425;
+
+*{
+  font-family: 'DM Sans', sans-serif;
+}
 
 header{
   width: 100%;
-  height: 90vh;
+  height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: peru;
+  background-color: white;
 }
 
 /* ESTILOS GENERALES PARA DESKTOP */
@@ -19,6 +25,8 @@ header{
 h1{
   font-family: 'DM Sans', sans-serif;
   font-size: 70px;
+  font-weight: 700;
+  color: $red;
 }
 
 h2{
@@ -28,12 +36,14 @@ h2{
 
 h3{
   font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
   font-size: 40px;
 }
 
 h4{
   font-family: 'DM Sans', sans-serif;
-  font-size: 16px;
+  font-weight: 700;
+  font-size: 30px;
 }
 
 p{
@@ -41,10 +51,66 @@ p{
   font-size: 20px;
 }
 
-.home-section{
+span{
+  color: $red;
+  font-weight: 700;
+}
+
+.logo{
+  font-family: 'DM Sans', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: $red;
+}
+
+.btn-large{
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  border-style: none;
+  border-radius: 10px;
+  padding: 15px 45px;
+  margin: 25px;
+  color: white;
+  background-color: $red;
+  transition: 0.3s;
+}
+
+.btn-large:hover{
+  background-color: $dark-red;
+}
+
+.divisor{
+  width: 100px;
+  height: 5px;
+  margin: 30px 0;
+  background-color: $red;
+}
+
+.home-article{
   width: 100%;
-  height: 50vh;
+  height: 70vh;
   display: flex;
   align-items: center;
+}
 
+// NAVBAR
+
+nav{
+  padding: 40px;
+}
+
+nav > li{
+  display: inline;
+}
+
+// FOOTER
+
+.link{
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.link:hover{
+  color: $red
 }

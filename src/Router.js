@@ -1,6 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
-// import Navbar from './components/navbar/Navbar'
+import Navbar from './components/navbar/Navbar'
+import Footer from './components/footer/Footer'
 import HomeView from './views/home/HomeView.jsx'
 import SignupView from './views/signup/SignupView.jsx'
 import ConfirmationView from './views/confirmation/ConfirmationView.jsx'
@@ -16,6 +17,7 @@ import BlogView from './views/blog/BlogView.jsx'
 
 const Router = () => (
     <BrowserRouter>
+        <Navbar />
         <Switch>
             <Route exact path="/" component={HomeView} />
             <Route exact path="/crear-cuenta" component={SignupView} />
@@ -30,6 +32,7 @@ const Router = () => (
             <Route exact path="/capacits" component={CapacitsView} />
             <Route exact path="/blog" component={BlogView} />
         </Switch>
+        <Footer />
     </BrowserRouter>
 )
 
