@@ -5,6 +5,7 @@
 // SET VARIABLES
 $red : #AC2C2E;
 $dark-red: #8f2425;
+$pink: #F5C7C6;
 
 *{
   font-family: 'DM Sans', sans-serif;
@@ -95,6 +96,11 @@ span{
 }
 
 // NAVBAR
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
 nav{
   padding: 40px;
@@ -102,6 +108,49 @@ nav{
 
 nav > li{
   display: inline;
+}
+
+nav form{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+nav form input{
+  font-family: 'DM Sans', sans-serif;
+  width: 200px;
+  font-size: 20px;
+  padding: 5px 15px;
+  color: $red;
+  margin: 10px 5px;
+  border-style: none;
+  border-radius: 5px;
+  background-color: $pink;
+}
+
+input :focus{
+  border-style: none;
+}
+
+::placeholder{
+  color: $red;
+}
+
+nav form button{
+  font-family: 'DM Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 5px 15px;
+  color: white;
+  margin: 10px 5px;
+  border-style: none;
+  border-radius: 5px;
+  background-color: $red;
+  transition: 0.3s;
+}
+
+nav form button:hover{
+  background-color: $dark-red;
 }
 
 // FOOTER
